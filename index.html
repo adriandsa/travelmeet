@@ -15,6 +15,28 @@
 <script type="text/javascript" src="js/jquery.mixitup.js"></script>
 <!-- Load js -->
 <script type="text/javascript" src="js/custom.js"></script>
+
+<script type="text/javascript">
+function right(e) {
+	if (navigator.appName == 'Netscape' &&
+	(e.which == 3 || e.which == 2))
+	return false;
+	else if (navigator.appName == 'Microsoft Internet Explorer' &&
+	(event.button == 2 || event.button == 3)) {
+	alert("I'm sorry, The Right click option on your mouse has been disabled for the download window pages.");
+	return false;
+	}
+	return true;
+}
+ 
+document.onmousedown=right;
+document.onmouseup=right;
+if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+if (document.layers) window.captureEvents(Event.MOUSEUP);
+window.onmousedown=right;
+window.onmouseup=right;
+</script>
+
 </head>
 <!-- Start Body -->
 <body>
