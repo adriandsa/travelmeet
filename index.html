@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Treviso | Responsive HTML5 Template</title>
+<title>TravelMeet</title>
 <!-- Load CSS -->
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <!-- Load Icon Font -->
@@ -15,6 +15,28 @@
 <script type="text/javascript" src="js/jquery.mixitup.js"></script>
 <!-- Load js -->
 <script type="text/javascript" src="js/custom.js"></script>
+
+<script type="text/javascript">
+function right(e) {
+	if (navigator.appName == 'Netscape' &&
+	(e.which == 3 || e.which == 2))
+	return false;
+	else if (navigator.appName == 'Microsoft Internet Explorer' &&
+	(event.button == 2 || event.button == 3)) {
+	alert("I'm sorry, The Right click option on your mouse has been disabled for the download window pages.");
+	return false;
+	}
+	return true;
+}
+ 
+document.onmousedown=right;
+document.onmouseup=right;
+if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+if (document.layers) window.captureEvents(Event.MOUSEUP);
+window.onmousedown=right;
+window.onmouseup=right;
+</script>
+
 </head>
 <!-- Start Body -->
 <body>
@@ -150,7 +172,7 @@
 			</div>
 			<div class="info">
 				<h2>Adrian D'Sa</h2>
-				<h4 class="light-gray">Product Manager</h4>
+				<h4 class="light-gray">Product Geek</h4>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -180,7 +202,7 @@
 			</div>
 			<div class="info">
 				<h2>Katie Ho</h2>
-				<h4 class="light-gray">Business Analyst</h4>
+				<h4 class="light-gray">The Big Boss</h4>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -210,7 +232,7 @@
 			</div>
 			<div class="info">
 				<h2>Lifeng Wang</h2>
-				<h4 class="light-gray">Developer</h4>
+				<h4 class="light-gray">Techie</h4>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -240,7 +262,7 @@
 			</div>
 			<div class="info">
 				<h2>Ruochen Ren</h2>
-				<h4 class="light-gray">Project Manager</h4>
+				<h4 class="light-gray">Techie</h4>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
