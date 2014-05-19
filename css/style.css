@@ -963,7 +963,10 @@ textarea {
   
 .hidden {  
   display: none;  
+}  
+      
+.visuallyhidden {  
   opacity: 0;  
-} 
+}  
 
 
