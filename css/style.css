@@ -960,13 +960,21 @@ textarea {
   transition: all 2s linear;  
   display: block;  
 }  
+<<<<<<< HEAD
   /*
+=======
+  
+>>>>>>> f6096b1e14727331bcedd69fc3705f40aa4e5190
 .hidden {  
   display: none;  
 }  
       
 .visuallyhidden {  
   opacity: 0;  
+<<<<<<< HEAD
 }  */
+=======
+}  
+>>>>>>> f6096b1e14727331bcedd69fc3705f40aa4e5190
 
 
