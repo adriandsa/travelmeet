@@ -161,6 +161,37 @@ $(document).ready(function() {
 		$('#snippets').fadeIn();
 	});
 
+	$("#connect_box").hide();
+	$("#activities_box").hide();
+	$("#translate_box").hide();
+	$("#recommendation_box").hide();
+	
+	$("#connect").click(function(){
+		$("#activities_box").hide();
+		$("#translate_box").hide();
+		$("#recommendation_box").hide();
+		$("#connect_box").show("slow");
+	});
 
+	$("#activities").click(function(){
+		$("#connect_box").hide();
+		$("#translate_box").hide();
+		$("#recommendation_box").hide();
+		$("#activities_box").show("slow");
+	});	
+	
+	$("#translate").click(function(){
+		$("#connect_box").hide();
+		$("#activities_box").hide();
+		$("#recommendation_box").hide();
+		$("#translate_box").show("slow");
+	});	
 
+	$("#recommendation").click(function(){
+		$("#connect_box").hide();
+		$("#activities_box").hide();
+		$("#translate_box").hide();
+		$("#recommendation_box").show("slow");
+	});		
+	
 });
