@@ -953,9 +953,9 @@ textarea {
 }
 
 .box {  
-  /*background: goldenrod;  */
+  /*background: goldenrod;  
   width: 300px;  
-  height: 300px;  
+  height: 300px; */ 
   margin: 30px auto;  
   transition: all 2s linear;  
   display: block;  
