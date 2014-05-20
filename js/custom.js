@@ -170,28 +170,28 @@ $(document).ready(function() {
 		$("#activities_box").hide();
 		$("#translate_box").hide();
 		$("#recommendation_box").hide();
-		$("#connect_box").show();
+		$("#connect_box").toggle();
 	});
 
 	$("#activities").click(function(){
 		$("#connect_box").hide();
 		$("#translate_box").hide();
 		$("#recommendation_box").hide();
-		$("#activities_box").show();
+		$("#activities_box").toggle();
 	});	
 	
 	$("#translate").click(function(){
 		$("#connect_box").hide();
 		$("#activities_box").hide();
 		$("#recommendation_box").hide();
-		$("#translate_box").show();
+		$("#translate_box").toggle();
 	});	
 
 	$("#recommendation").click(function(){
 		$("#connect_box").hide();
 		$("#activities_box").hide();
 		$("#translate_box").hide();
-		$("#recommendation_box").show();
+		$("#recommendation_box").toggle();
 	});		
 	
 });
