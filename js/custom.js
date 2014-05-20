@@ -161,10 +161,10 @@ $(document).ready(function() {
 		$('#snippets').fadeIn();
 	});
 
-	//$("#connect_box").hide();
-	//$("#activities_box").hide();
-	//$("#translate_box").hide();
-	//$("#recommendation_box").hide();
+	$("#connect_box").hide();
+	$("#activities_box").hide();
+	$("#translate_box").hide();
+	$("#recommendation_box").hide();
 	
 	$("#connect").click(function(){
 		$("#activities_box").hide();
