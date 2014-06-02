@@ -43,7 +43,7 @@ window.onmouseup=right;
 
 	function postContactToGoogle(){
 		var email = $("#email").val();
-		
+		console.log(email);
 		
 		if ((email !== "") && && (validateEmail(email)))) {
 			$.ajax({
@@ -53,11 +53,11 @@ window.onmouseup=right;
 				dataType: "xml",
 		                statusCode: {
 		                    0: function (){
-		                        $j('#email').val("");
+		                  //      $j('#email').val("");
 		                        //Success message
 		                    },
 		                    200: function (){
-		                        $j('#email').val("");
+		                  //      $j('#email').val("");
 		                        //Success Message
 		                    }
 		                }				
@@ -70,6 +70,7 @@ window.onmouseup=right;
 	
         $(document).ready(function(){
             $('#emailForm').submit(function() {
+            	console.log('test');
                 postContactToGoogle();
                 return false;
             });
