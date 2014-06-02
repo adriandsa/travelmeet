@@ -192,6 +192,38 @@ $(document).ready(function() {
 		$("#activities_box").hide();
 		$("#translate_box").hide();
 		$("#recommendation_box").toggle(200);
-	});		
+	});
+	
+	    function validateEmail(email) {
+	        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	        return re.test(email);
+	    }"	
+	
+	function postContactToGoogle(){
+		var email = $("#email").val();
+		
+		
+		if ((email !== "") && && (validateEmail(email)))) {
+			$.ajax({
+				url: https://docs.google.com/forms/d/1MBa7Wbpqbyfgs4hgDea_CGbiw6N6JwUZLPccZEzym-4/formResponse;
+				data: {"entry_1626902444": email},
+				type: "POST",
+				dataType: "xml",
+		                statusCode: {
+		                    0: function (){
+		                        $j('#email').val("");
+		                        //Success message
+		                    },
+		                    200: function (){
+		                        $j('#email').val("");
+		                        //Success Message
+		                    }
+		                }				
+			});	
+		}
+		        else {
+            //Error message
+        	}
+	}	
 	
 });
