@@ -385,9 +385,10 @@ window.onmouseup=right;
 		<p class="main dark-gray">Interested much?... Drop us a line!</p>
 		<!-- Start Main Paragraph -->
 		
-		<form id="emailForm" action="" method="POST" id="ss-form" target="_self" onsubmit="">
+		<form id="emailForm" action="https://docs.google.com/forms/d/1MBa7Wbpqbyfgs4hgDea_CGbiw6N6JwUZLPccZEzym-4/formResponse?entry_1626902444=" 
+		method="POST" id="ss-form" target="_self" onsubmit="location.href = this.action + this.email.value; return false;">
 			<label>Email</label><br>
-			<input id="email" type="text" value="" class="form"><br>
+			<input id="email" name="email" type="text" value="" class="form"><br>
 			
 			<input type="submit" value="Submit"> 
 
