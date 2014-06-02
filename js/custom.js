@@ -73,15 +73,15 @@ $(document).ready(function() {
 			el.animate({
               textShadowBlur:20,
               opacity: 0
-            }, 1000 , function() {
+            }, 500 , function() {
               index = $.inArray(el.html(), text)
               if((index + 1) == text.length) index = -1
               el.text(text[index + 1]).animate({
                 textShadowBlur:0,
                 opacity: 1
-              }, 1000 );
+              }, 500 );
             });
-		}, 2000);
+		}, 3000);
 	});
 
 	// Start Carousel
