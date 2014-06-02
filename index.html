@@ -45,7 +45,7 @@ window.onmouseup=right;
 		var email = $("#email").val();
 		console.log(email);
 		
-		if ((email !== "") && && (validateEmail(email)))) {
+		if ((email !== "") && (validateEmail(email))) {
 			$.ajax({
 				url: "https://docs.google.com/forms/d/1MBa7Wbpqbyfgs4hgDea_CGbiw6N6JwUZLPccZEzym-4/formResponse",
 				data: {"entry_1626902444": email},
